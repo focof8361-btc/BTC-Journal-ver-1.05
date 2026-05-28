@@ -1,1 +1,63 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTC Dashboard Refactor</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white p-5">
+
+  <h1 class="text-2xl font-bold text-cyan-400">
+    BTC Dashboard Refactor
+  </h1>
+
+  <div class="mt-5 space-y-3">
+
+    <input
+      id="active-entry"
+      placeholder="Entry"
+      class="bg-zinc-900 border p-2 w-full"
+    />
+
+    <input
+      id="active-sl"
+      placeholder="Stop Loss"
+      class="bg-zinc-900 border p-2 w-full"
+    />
+
+    <input
+      id="active-tp"
+      placeholder="Take Profit"
+      class="bg-zinc-900 border p-2 w-full"
+    />
+
+    <input
+      id="trade-value"
+      value="1000"
+      class="bg-zinc-900 border p-2 w-full"
+    />
+
+    <input
+      id="leverage"
+      value="10"
+      class="bg-zinc-900 border p-2 w-full"
+    />
+
+    <input
+      id="active-rr"
+      readonly
+      class="bg-zinc-800 border p-2 w-full"
+    />
+
+    <div id="position-monitoring-content"></div>
+
+  </div>
+
+  <script type="module" src="./src/app.js"></script>
+
+</body>
+</html>
